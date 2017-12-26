@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, DefaultRoute, IndexLink } from 'react-router'
-import { Navbar, Nav, NavItem, MenuItem, NavDropdown } from 'react-bootstrap';
+import { navbar, nav, MenuItem, dropdown } from 'react-bootstrap';
 
 import Menu from './Header.js'
 import Contact from './Contact.js'

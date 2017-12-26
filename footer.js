@@ -12,6 +12,7 @@ import mekhe from './assets/images/art/mekhe.jpg'
 import sante from './assets/images/art/sante.jpg'
 import fonsis from './assets/images/art/fonsis.jpg'
 import logo from './assets/images/art/fons.png'
+import logofooter from './assets/images/art/footerfons.png'
 
 
 const Footer = () =>
@@ -21,8 +22,7 @@ const Footer = () =>
             <div class="row">
 
               <div class="col-md-3 col-sm-6 inner">
-                <a href="index.html"><img src={logo} className="gotype" alt=""/></a>
-                <h4>FONSIS</h4>
+                <a href="index.html"><img src={logofooter} className="gotype" alt=""/></a>
                 <p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
                 <a href="about.html" class="txt-btn">Lire la suite</a>
               </div>
@@ -74,7 +74,7 @@ const Footer = () =>
 
           <div class="footer-bottom">
             <div class="container inner">
-              <p class="pull-left">© 2017 FONSIS. All rights reserved.</p>
+              <p class="pull-left">© 2018 FONSIS. All rights reserved.</p>
               <ul class="footer-menu pull-right">
                 <li><a href="http://localhost:3000/accueil">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
