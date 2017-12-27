@@ -98,7 +98,7 @@ const Accueil = () => (
 						<div class="container">
 							<div class="caption vertical-center text-left">
 
-								<h1 class="fadeInRight-1 dark-bg light-color"><span>Nous faire <br/>confiance</span></h1>
+								<h1 class="fadeInRight-1 dark-bg light-color"><span>Investir avec nous</span></h1>
 
 								<div class="fadeInRight-3">
 									<a href="#" class="btn btn-large">Lire la suite</a>
