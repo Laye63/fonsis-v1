@@ -65,7 +65,7 @@ const Equipe = (props) => (
 
     									<ul class="social">
     										<li><a href="#"><i class="icon-s-facebook"></i></a></li>
-    										<li><a href="#"><i class="icon-s-gplus"></i></a></li>
+    										
     										<li><a href="#"><i class="icon-s-twitter"></i></a></li>
     									</ul>
 

@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Equipe from './Team.js'
+import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, DefaultRoute, IndexLink } from 'react-router'
 import etimos from './assets/images/art/etimos.jpg'
 import parentus from './assets/images/art/parentus.jpg'
 import energy from './assets/images/art/energy.jpg'
@@ -22,7 +24,7 @@ const Footer = () =>
             <div class="row">
 
               <div class="col-md-3 col-sm-6 inner">
-                <a href="index.html"><img src={logofooter} className="gotype" alt=""/></a>
+                <a href="index.html"><img src={logo} className="gotype" alt=""/></a>
                 <p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
                 <a href="about.html" class="txt-btn">Lire la suite</a>
               </div>
@@ -54,18 +56,18 @@ const Footer = () =>
                 <h4>Nous contacter</h4>
                 <ul class="contacts">
                   <li><i class="icon-location contact"></i> Immeuble SNR  Rue de Thann X Dagorne, 5ème étage Dakar (SENEGAL).| B.P :50882 Dakar RP, Sénégal</li>
-                  <li><i class="icon-mobile contact"></i> +221 33 889 33 77  </li>
+                  <li><i class="icon-phone-1"></i> +221 33 889 33 77  </li>
                   <li><a href="#"><i class="icon-mail-1 contact"></i> contact@fonsis.org</a></li>
                 </ul>
               </div>
 
               <div class="col-md-3 col-sm-6 inner">
-                <h4>Free updates</h4>
+                <h4>Soumettre un projet</h4>
                 <p>Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
                 <form id="newsletter" class="form-inline newsletter" role="form">
-                  <label class="sr-only" for="exampleInputEmail">Email address</label>
+                  <label class="sr-only" for="exampleInputEmail">Entrer votre adresse e-mail</label>
                   <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter your email address"/>
-                  <button type="submit" class="btn btn-default btn-submit">Subscribe</button>
+                  <button type="submit" class="btn btn-default btn-submit">S'inscrire</button>
                 </form>
               </div>
 
@@ -74,14 +76,14 @@ const Footer = () =>
 
           <div class="footer-bottom">
             <div class="container inner">
-              <p class="pull-left">© 2018 FONSIS. All rights reserved.</p>
+              <p class="pull-left">© 2018 FONSIS. Tous droits réservés.</p>
               <ul class="footer-menu pull-right">
-                <li><a href="http://localhost:3000/accueil">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="http://localhost:3000/accueil">Mot du Directeur Général</a></li>
+                <li><a href="portfolio.html">Présentation</a></li>
+                <li><a href="blog.html">Notre Métier</a></li>
+                <li><a href="about.html">Notre Mission</a></li>
+                <li><a href="services.html">Gouvernance</a></li>
+                <li><Link to="/apropos">Notre Equipe</Link></li>
               </ul>
             </div>
           </div>

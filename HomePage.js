@@ -61,7 +61,7 @@ const Accueil = () => (
     								<h1 class="fadeInDown-1 light-color">BIOSOY</h1>
     								<p class="fadeInDown-2 medium-color">Le FONSIS inaugure un projet de 5 milliards.</p>
     								<div class="fadeInDown-3">
-    									<a href="#" class="btn btn-large">Lire la suite</a>
+    									<Link to="#" class="btn btn-large">Lire la suite</Link>
     								</div>
 
     							</div>
@@ -74,7 +74,7 @@ const Accueil = () => (
                 <h1 class="fadeInLeft-1 light-color">ENERGIE</h1>
                 <p class="fadeInLeft-2 light-color">REEN is designed to showcase your talent and put your work in the forefront. <br/>Professionally use of typography and layout that fits your content.</p>
                 <div class="fadeInLeft-3">
-                  <a href="#" class="btn btn-large">Lire la suite</a>
+                  <Link to="#" class="btn btn-large">Lire la suite</Link>
                 </div>
 
               </div>
@@ -87,7 +87,7 @@ const Accueil = () => (
             <h1 class="fadeInLeft-1 light-color">SANTÉ</h1>
             <p class="fadeInLeft-2 light-color">REEN is designed to showcase your talent and put your work in the forefront. <br/>Professionally use of typography and layout that fits your content.</p>
             <div class="fadeInLeft-3">
-              <a href="#" className="btn btn-large">Lire la suite</a>
+              <Link to="#" className="btn btn-large">Lire la suite</Link>
             </div>
 
           </div>
@@ -101,7 +101,7 @@ const Accueil = () => (
 								<h1 class="fadeInRight-1 dark-bg light-color"><span>Investir avec nous</span></h1>
 
 								<div class="fadeInRight-3">
-									<a href="#" class="btn btn-large">Lire la suite</a>
+									<Link to="#" class="btn btn-large">Lire la suite</Link>
 								</div>
 
 							</div>
@@ -126,17 +126,17 @@ const Accueil = () => (
       						<div class="col-sm-12 portfolio">
 
       							<ul class="filter text-center">
-      								<li><a href="#" data-filter="*" class="active">All</a></li>
-      								<li><a href="#" data-filter=".identity">Energie</a></li>
-      								<li><a href="#" data-filter=".interactive">Agro-Industrie</a></li>
-      								<li><a href="#" data-filter=".print">Investissement</a></li>
-      								<li><a href="#" data-filter=".photography">Santé</a></li>
+      								<li><Link to="#" data-filter="*" class="active">All</Link></li>
+      								<li><Link to="#" data-filter=".identity">Energie</Link></li>
+      								<li><Link to="#" data-filter=".interactive">Agro-Industrie</Link></li>
+      								<li><Link to="#" data-filter=".print">Investissement</Link></li>
+      								<li><Link to="#" data-filter=".photography">Santé</Link></li>
       							</ul>
 
       							<ul class="isotope items col-3">
 
       								<li class="item thumb photography">
-      									<a href="portfolio-post.html">
+      									<Link to="portfolio-post.html">
       										<figure>
       											<figcaption class="text-overlay">
       												<div class="info">
@@ -144,13 +144,13 @@ const Accueil = () => (
       													<p>Santé</p>
       												</div>
       											</figcaption>
-      											<img src="assets/images/art/photograph02.jpg" alt=""/>
+      											<img src="assets/images/art/work06.jpg" alt=""/>
       										</figure>
-      									</a>
+      									</Link>
       								</li>
 
       								<li class="item thumb identity">
-      									<a href="portfolio-post.html">
+      									<Link to="portfolio-post.html">
       										<figure>
       											<figcaption class="text-overlay">
       												<div class="info">
@@ -158,13 +158,13 @@ const Accueil = () => (
       													<p>Agriculture</p>
       												</div>
       											</figcaption>
-      											<img src="assets/images/art/work17.jpg" alt=""/>
+      											<img src="assets/images/art/work06.jpg" alt=""/>
       										</figure>
-      									</a>
+      									</Link>
       								</li>
 
       								<li class="item thumb print">
-      									<a href="portfolio-post.html">
+      									<Link to="portfolio-post.html">
       										<figure>
       											<figcaption class="text-overlay">
       												<div class="info">
@@ -172,13 +172,13 @@ const Accueil = () => (
       													<p>Agro-Industrie</p>
       												</div>
       											</figcaption>
-      											<img src="assets/images/art/work18.jpg" alt=""/>
+      											<img src="assets/images/art/work06.jpg" alt=""/>
       										</figure>
-      									</a>
+      									</Link>
       								</li>
 
       								<li class="item thumb identity">
-      									<a href="portfolio-post.html">
+      									<Link to="portfolio-post.html">
       										<figure>
       											<figcaption class="text-overlay">
       												<div class="info">
@@ -186,13 +186,13 @@ const Accueil = () => (
       													<p>Investissement</p>
       												</div>
       											</figcaption>
-      											<img src="assets/images/art/work19.jpg" alt=""/>
+      											<img src="assets/images/art/work06.jpg" alt=""/>
       										</figure>
-      									</a>
+      									</Link>
       								</li>
 
       								<li class="item thumb print">
-      									<a href="portfolio-post.html">
+      									<Link to="portfolio-post.html">
       										<figure>
       											<figcaption class="text-overlay">
       												<div class="info">
@@ -200,13 +200,13 @@ const Accueil = () => (
       													<p>Investissement</p>
       												</div>
       											</figcaption>
-      											<img src="assets/images/art/work10.jpg" alt=""/>
+      											<img src="assets/images/art/work06.jpg" alt=""/>
       										</figure>
-      									</a>
+      									</Link>
       								</li>
 
       								<li class="item thumb interactive">
-      									<a href="portfolio-post.html">
+      									<Link to="portfolio-post.html">
       										<figure>
       											<figcaption class="text-overlay">
       												<div class="info">
@@ -214,13 +214,13 @@ const Accueil = () => (
       													<p>Investissement</p>
       												</div>
       											</figcaption>
-      											<img src="assets/images/art/work03.jpg" alt=""/>
+      											<img src="assets/images/art/work06.jpg" alt=""/>
       										</figure>
-      									</a>
+      									</Link>
       								</li>
 
       								<li class="item thumb identity">
-      									<a href="portfolio-post.html">
+      									<Link to="portfolio-post.html">
       										<figure>
       											<figcaption class="text-overlay">
       												<div class="info">
@@ -228,13 +228,13 @@ const Accueil = () => (
       													<p>Energie</p>
       												</div>
       											</figcaption>
-      											<img src="assets/images/art/work05.jpg" alt=""/>
+      											<img src="assets/images/art/work06.jpg" alt=""/>
       										</figure>
-      									</a>
+      									</Link>
       								</li>
 
       								<li class="item thumb print">
-      									<a href="portfolio-post.html">
+      									<Link to="portfolio-post.html">
       										<figure>
       											<figcaption class="text-overlay">
       												<div class="info">
@@ -242,13 +242,13 @@ const Accueil = () => (
       													<p>Investissement</p>
       												</div>
       											</figcaption>
-      											<img src="assets/images/art/work20.jpg" alt=""/>
+      											<img src="assets/images/art/work06.jpg" alt=""/>
       										</figure>
-      									</a>
+      									</Link>
       								</li>
 
       								<li class="item thumb identity print">
-      									<a href="portfolio-post.html">
+      									<Link to="portfolio-post.html">
       										<figure>
       											<figcaption class="text-overlay">
       												<div class="info">
@@ -256,9 +256,9 @@ const Accueil = () => (
       													<p>Energie</p>
       												</div>
       											</figcaption>
-      											<img src="assets/images/art/work21.jpg" alt=""/>
+      											<img src="assets/images/art/work06.jpg" alt=""/>
       										</figure>
-      									</a>
+      									</Link>
       								</li>
 
       							</ul>
@@ -268,140 +268,143 @@ const Accueil = () => (
 
       				</div>
       			</section>
-        <section id="clients">
-				<div class="container inner">
+            <section id="carousels" class="light-bg">
+            <div class="container inner">
 
-					<div class="row">
-						<div class="col-md-8 col-sm-9 center-block text-center">
-							<header>
-								<h1>Capital investissement au Sénégal</h1>
-								<p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes.</p>
-							</header>
-						</div>
-					</div>
+            <div class="row">
+          <div class="col-md-8 col-sm-9 center-block text-center">
+            <header>
+              <h1>ILS NOUS FONT CONFIANCE</h1>
+              <p>Medium carousel UI elements with outer navigation and pagination. <br/>All carousels are fully responsive, draggable and touchable!</p>
+            </header>
+          </div>
+        </div>
+        </div>
 
-					<div class="row inner-top-sm">
-						<div class="col-sm-12">
-							<div id="owl-clients" class="owl-carousel owl-outer-nav">
+        <div class="row">
+          <div class="col-sm-12 inner-top-md">
+            <div id="owl-videos" class="owl-carousel owl-outer-nav owl-ui-md owl-item-gap">
 
-								<div class="item">
-										<figure>
-											<figcaption class="text-overlay">
-												<div class="info">
-													<h4>Client</h4>
-												</div>
-											</figcaption>
-											<img src={Oiko} className="oik" alt=""/>
-										</figure>
-								</div>
+              <div class="item">
+                <figure>
 
-								<div class="item">
-										<figure>
-											<figcaption class="text-overlay">
-												<div class="info">
-													<h4>Abraaj</h4>
-												</div>
-											</figcaption>
-											<img src={abraaj} alt=""/>
-										</figure>
-								</div>
+                  <div class="icon-overlay icn-link">
+                    <Link to="slider-carousel.html"><img src={Oiko} alt=""/></Link>
+                  </div>
 
-								<div class="item">
-										<figure>
-											<figcaption class="text-overlay">
-												<div class="info">
-													<h4>Africinvest</h4>
-												</div>
-											</figcaption>
-											<img src={africinvest} className="afric" alt=""/>
-										</figure>
-								</div>
+                  <figcaption class="bordered no-top-border">
+                    <div class="info">
+                      <h4><Link to="slider-carousel.html">Dashboard</Link></h4>
+                      <p>Interactive</p>
+                    </div>
+                  </figcaption>
 
-								<div class="item">
-										<figure>
-											<figcaption class="text-overlay">
-												<div class="info">
-													<h4>Aventura</h4>
-												</div>
-											</figcaption>
-											<img src={aventura} className="aventura" alt=""/>
-										</figure>
-								</div>
+                </figure>
+              </div>
+              <div class="item">
+                <figure>
 
-								<div class="item">
-										<figure>
-											<figcaption class="text-overlay">
-												<div class="info">
-													<h4>Afig</h4>
-												</div>
-											</figcaption>
-											<img src={afig} className="afig" alt=""/>
-										</figure>
-								</div>
+                  <div class="icon-overlay icn-link">
+                    <Link to="slider-carousel.html"><img src={afig} alt=""/></Link>
+                  </div>
 
-								<div class="item">
-										<figure>
-											<figcaption class="text-overlay">
-												<div class="info">
-													<h4>IFC</h4>
-												</div>
-											</figcaption>
-											<img src={ifc} className="ifc" alt=""/>
-										</figure>
-								</div>
+                  <figcaption class="bordered no-top-border">
+                    <div class="info">
+                      <h4><Link to="slider-carousel.html">Dashboard</Link></h4>
+                      <p>Interactive</p>
+                    </div>
+                  </figcaption>
 
-								<div class="item">
-										<figure>
-											<figcaption class="text-overlay">
-												<div class="info">
-													<h4>ECP</h4>
-												</div>
-											</figcaption>
-											<img src={ecp} className="ECP" alt=""/>
-										</figure>
-								</div>
+                </figure>
+              </div>
+              <div class="item">
+                <figure>
 
-								<div class="item">
-										<figure>
-											<figcaption class="text-overlay">
-												<div class="info">
-													<h4>Client</h4>
-												</div>
-											</figcaption>
-											<img src={etimos}  alt=""/>
-										</figure>
-								</div>
-                <div class="item">
-										<figure>
-											<figcaption class="text-overlay">
-												<div class="info">
-													<h4>Proparco</h4>
-												</div>
-											</figcaption>
-											<img src={proparco} className= "proparco" alt=""/>
-										</figure>
-								</div>
+                  <div class="icon-overlay icn-link">
+                    <a href="slider-carousel.html"><img src={aventura} alt=""/></a>
+                  </div>
+
+                  <figcaption class="bordered no-top-border">
+                    <div class="info">
+                      <h4><Link to="slider-carousel.html">Dashboard</Link></h4>
+                      <p>Interactive</p>
+                    </div>
+                  </figcaption>
+
+                </figure>
+              </div>
+              <div class="item">
+                <figure>
+
+                  <div class="icon-overlay icn-link">
+                    <Link to="slider-carousel.html"><img src={cauris} alt=""/></Link>
+                  </div>
+
+                  <figcaption class="bordered no-top-border">
+                    <div class="info">
+                      <h4><Link to="slider-carousel.html">Dashboard</Link></h4>
+                      <p>Interactive</p>
+                    </div>
+                  </figcaption>
+
+                </figure>
+              </div>
+              <div class="item">
+                <figure>
+
+                  <div class="icon-overlay icn-link">
+                    <Link to="slider-carousel.html"><img src={ifc} alt=""/></Link>
+                  </div>
+
+                  <figcaption class="bordered no-top-border">
+                    <div class="info">
+                      <h4><Link to="slider-carousel.html">Dashboard</Link></h4>
+                      <p>Interactive</p>
+                    </div>
+                  </figcaption>
+
+                </figure>
+              </div>
+              <div class="item">
+                <figure>
+
+                  <div class="icon-overlay icn-link">
+                    <Link to="slider-carousel.html"><img src={africinvest} alt=""/></Link>
+                  </div>
+
+                  <figcaption class="bordered no-top-border">
+                    <div class="info">
+                      <h4><Link to="slider-carousel.html">Dashboard</Link></h4>
+                      <p>Interactive</p>
+                    </div>
+                  </figcaption>
+
+                </figure>
+              </div>
+              <div class="item">
+                <figure>
+
+                  <div class="icon-overlay icn-link">
+                    <Link to="slider-carousel.html"><img src={abraaj} alt=""/></Link>
+                  </div>
+
+                  <figcaption class="bordered no-top-border">
+                    <div class="info">
+                      <h4><Link to="slider-carousel.html">Dashboard</Link></h4>
+                      <p>Interactive</p>
+                    </div>
+                  </figcaption>
+
+                </figure>
+              </div>
+
+              </div>
 
 
 
-								<div class="item">
-										<figure>
-											<figcaption class="text-overlay">
-												<div class="info">
-													<h4>Client</h4>
-												</div>
-											</figcaption>
-											<img src={fmo}  className="fmo" alt=""/>
-										</figure>
-								</div>
-
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-			</section>
+        </div>
+        </div>
+  </section>
 
 </div>
 

@@ -1,8 +1,14 @@
 import React, { Component } from 'react'
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, DefaultRoute, IndexLink } from 'react-router'
-import { Navbar, Nav, NavItem, MenuItem, NavDropdown } from 'react-bootstrap';
+import { navbar, nav, navitem, menuitem, Dropdown } from 'react-bootstrap';
 import logo from './assets/images/art/fonsis.png'
 import dg from './assets/images/art/kane.JPG'
+import parentus from './assets/images/art/parentus.jpg'
+import energy from './assets/images/art/energy.jpg'
+import agriculture from './assets/images/art/agriculture.jpg'
+import polimed from './assets/images/art/polimed.jpg'
+import boad from './assets/images/art/boad.jpg'
+import maroc from './assets/images/art/maroc.jpg'
 
 
 const Menu = () => (
@@ -15,26 +21,24 @@ const Menu = () => (
           <div class="container">
 
             <ul class="info pull-left">
-              <li><a href="#"><i class="icon-mail-1 contact"></i> info@fonsi.org</a></li>
-              <li><i class="icon-mobile contact"></i> +221 33 889 33 77</li>
-              <li><a href="#"> Nos offres d'emploi</a></li>
-              <li><a href="#">Médias</a></li>
-              <li><a href="#">Espace Carrière</a></li>
-              <li><IndexLink activeClassName='active' to='/contact'>Nous contacter</IndexLink></li>
+              <li><Link to="#"><i class="icon-mail-1 contact"></i> info@fonsi.org</Link></li>
+              <li><Link to="#"><i class="icon-s-facebook"></i></Link></li>
+              <li><Link to="#"><i class="icon-s-linkedin"></i></Link></li>
+              <li><Link to="#"><i class="icon-s-twitter"></i></Link></li>
+              <li><i class="icon-phone-1"></i> +221 33 889 33 77</li>
+
 
 
             </ul>
 
-            <ul class="social pull-right">
-              <li><a href="#"><i class="icon-s-facebook"></i></a></li>
-              <li><a href="#"><i class="icon-s-gplus"></i></a></li>
-              <li><a href="#"><i class="icon-s-twitter"></i></a></li>
-              <li><a href="#"><i class="icon-s-pinterest"></i></a></li>
-              <li><a href="#"><i class="icon-s-behance"></i></a></li>
-              <li><a href="#"><i class="icon-s-dribbble"></i></a></li>
+            <ul class="info pull-right">
+              <li><Link to="#"> Nos offres d'emploi</Link></li>
+              <li><Link to="#">Médias</Link></li>
+              <li><Link to="#">Espace Carrière</Link></li>
+              <li><IndexLink activeclass='active' to='/contact'>Nous contacter</IndexLink></li>
             </ul>
-            <a class="navbar-brand" href="index.html"><img src={logo} class="logo" alt=""/></a>
-            <a class="navbar-toggle btn responsive-menu pull-right" data-toggle="collapse" data-target=".navbar-collapse"><i class='icon-menu-1'></i></a>
+            <Link class="navbar-brand" to='/'><img src={logo} class="logo" alt=""/></Link>
+            <Link class="navbar-toggle btn responsive-menu pull-right" data-toggle="collapse" data-target=".navbar-collapse"><i class='icon-menu-1'></i></Link>
 
             </div>
             </div>
@@ -44,13 +48,14 @@ const Menu = () => (
 
 
 
-              <a class="navbar-brand" href="index.html"><img src={logo} class="logo" alt=""/></a>
+              <Link to='/' class="navbar-brand" ><img src={logo} class="logo" alt=""/></Link>
 
 
 
               <ul class="nav navbar-nav">
+                <Link to="" class="btn">Soumettre votre projet</Link>
                 <li class="dropdown yamm-fullwidth">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu"></i></a>
+                  <Link to="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu"></i></Link>
 
                   <ul class="dropdown-menu yamm-dropdown-menu">
                     <li>
@@ -60,11 +65,11 @@ const Menu = () => (
                           <h4>Mot du Directeur</h4>
                           <figure>
                             <div class="icon-overlay icn-link">
-                              <a href="portfolio-post.html"><img src={dg} alt=""/></a>
+                              <Link to="portfolio-post.html"><img src={dg} alt=""/></Link>
                             </div>
                             <figcaption>
                               <p>Consed quodips ameniat empernam que apid cust quas molor eatis numa estio.</p>
-                              <a href="portfolio-post.html" class="btn">Lire la suite</a>
+                              <Link to="portfolio-post.html" class="btn">Lire la suite</Link>
                             </figcaption>
                           </figure>
                         </div>
@@ -73,79 +78,75 @@ const Menu = () => (
                           <h4>Qui sommes-nous</h4>
 
                           <ul class="circled">
-                            <li><a href="portfolio2.html">Pésentation</a></li>
-                            <li><a href="portfolio5.html">Notre mission</a></li>
-                            <li><a href="portfolio-post5.html">Notre métier</a></li>
-                            <li><a href="blog5.html">Gouvernance</a></li>
-                            <li><a href="blog7.html">Notre Equipe</a></li>
+                            <li><Link activeclass='active' to='/apropos'>Présentation</Link></li>
+                            <li><Link to="portfolio5.html">Notre mission</Link></li>
+                            <li><Link activeclass='active' to='/equipe'>Notre métier</Link></li>
+                            <li><Link activeclass='active' to='/gouvernance'>Gouvernance</Link></li>
+                            <li><Link activeclass='active' to='/equipe'>Notre équipe</Link></li>
                           </ul>
 
                           <h4>Vous avez un projet</h4>
                           <ul class="circled">
-                              <li><a href="blog-post.html">Votre projet</a></li>
-                            <li><a href="sidenav.html">Soumettre votre projet</a></li>
-                            <li><a href="about2.html">FAQ</a></li>
+                              <li><Link to="blog-post.html">Votre projet</Link></li>
+                            <li><Link to="sidenav.html">Soumettre votre projet</Link></li>
+                            <li><Link to="about2.html">FAQ</Link></li>
 
                           </ul>
 
                           <h4>Vous êtes investisseurs</h4>
                           <ul class="circled">
-                            <li><a href="pricing.html">Investir avec nous</a></li>
-                            <li><a href="contact.html">Investisseurs partenaires</a></li>
-                            <li><a href="contact.html">Formulaire de contact</a></li>
+                            <li><Link to="pricing.html">Investir avec nous</Link></li>
+                            <li><Link to="contact.html">Investisseurs partenaires</Link></li>
+                            <li><Link to="contact.html">Formulaire de contact</Link></li>
                           </ul>
 
                         </div>
 
                         <div class="col-sm-3 inner">
-                          <h4>Latest Works</h4>
+                          <h4>Activités récentes</h4>
 
                           <div class="row thumbs gap-xs">
 
                             <div class="col-xs-6 thumb">
                               <figure class="icon-overlay icn-link">
-                                <a href="portfolio-post.html"><img src="assets/images/art/work02.jpg" alt=""/></a>
+                                <Link to="portfolio-post.html"><img src={parentus} alt=""/></Link>
+                              </figure>
+                            </div>
+                            <div class="col-xs-6 thumb">
+                              <figure class="icon-overlay icn-link">
+                                <Link to="portfolio-post.html"><img src={agriculture} alt=""/></Link>
+                              </figure>
+                            </div>
+
+
+                            <div class="col-xs-6 thumb">
+                              <figure class="icon-overlay icn-link">
+                                <Link to="portfolio-post.html"><img src={maroc} alt=""/></Link>
                               </figure>
                             </div>
 
                             <div class="col-xs-6 thumb">
                               <figure class="icon-overlay icn-link">
-                                <a href="portfolio-post.html"><img src="assets/images/art/work03.jpg" alt=""/></a>
+                                <Link to="portfolio-post.html"><img src={boad} alt=""/></Link>
                               </figure>
                             </div>
 
-                            <div class="col-xs-6 thumb">
-                              <figure class="icon-overlay icn-link">
-                                <a href="portfolio-post.html"><img src="assets/images/art/work04.jpg" alt=""/></a>
-                              </figure>
-                            </div>
 
                             <div class="col-xs-6 thumb">
                               <figure class="icon-overlay icn-link">
-                                <a href="portfolio-post.html"><img src="assets/images/art/work05.jpg" alt=""/></a>
+                                <Link to="portfolio-post.html"><img src={energy} alt=""/></Link>
                               </figure>
                             </div>
 
-                            <div class="col-xs-6 thumb">
-                              <figure class="icon-overlay icn-link">
-                                <a href="portfolio-post.html"><img src="assets/images/art/work06.jpg" alt=""/></a>
-                              </figure>
-                            </div>
-
-                            <div class="col-xs-6 thumb">
-                              <figure class="icon-overlay icn-link">
-                                <a href="portfolio-post.html"><img src="assets/images/art/work07.jpg" alt=""/></a>
-                              </figure>
-                            </div>
 
                           </div>
                         </div>
 
                         <div class="col-sm-3 inner">
-                          <h4>About Us</h4>
+                          <h4>A propos</h4>
                           <p>Voluptat ibusaped molorporro consequ idustibus. Reressi morum ut dolessiti tem nihicid ernatum, coria volore non pro officat ut autem accaborem conet. Omnis peribus qui dolent praeperrum coria.</p>
                           <p>Equam conesti occum dolorest, quae venderes quistius, comnitatur sae dinam nonseculpa cum fugit is verciam.</p>
-                          <a href="about.html" class="btn">Read More</a>
+                          <Link to="about.html" class="btn">Lire la suite</Link>
                         </div>
 
                       </div>
